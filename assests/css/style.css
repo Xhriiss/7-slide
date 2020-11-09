@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    outline: none;
+}
+@font-face{
+    src: url(../fonts/Commissioner-Black.ttf);
+    font-family: CommissionerBlack;
+}
+@font-face{
+    src: url(../fonts/Commissioner-Medium.ttf);
+    font-family: commissionermedium;
+}
+@font-face{
+    src: url(../fonts/Commissioner-SemiBold.ttf);
+    font-family: CommissionerSemibold;
+}
+@font-face{
+    src: url(../fonts/Commissioner-Regular.ttf);
+    font-family: CommissionerRegular;
+}
+:root{
+    --primary-color:   ;
+    --secondary-color:  ;
+    --testing-color:   ;
+    --success-color:    ;
+    --warning-color:  ;
+}
+body{
+    padding: 50px;
+    margin: 0px;
+    font-family: CommissionerRegular;
+    font-size: 16px;
+}
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+.image-slide {
+    padding: 20px;
+    background-color: rgb(169, 233, 150);
+    width: 60%;
+    margin: auto;
+  }
+  
+.slider-cont{
+    overflow: hidden;
+}           
+.slider{
+    display: flex;
+    width: 700%;
+    height: 100%;
+    align-items: stretch;
+    animation-name: SlideImg;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    /* animation-delay: 2s; */
+    /* animation-fill-mode: forwards; */
+}
+.sliders{
+    width: 100%;
+}
+@keyframes SlideImg{
+    0%{
+        transform: translateX(0%);
+    }
+    5%{
+        transform: translateX(0%);
+    }
+    14.3%{
+        transform: translateX(-14.285%);
+    }
+    23%{
+        transform: translateX(-14.285%);
+    }
+    28.6%{
+        transform: translateX(-28.57%);
+    }
+    37%{
+        transform: translateX(-28.57%);
+    }
+    42.9%{
+        transform: translateX(-42.85%);
+    }
+    51%{
+        transform: translateX(-42.85%);
+    }
+    57.2%{
+        transform: translateX(-57.14%);
+    }
+    65%{
+        transform: translateX(-57.14%);
+    }
+    71.5%{
+        transform: translateX(-71.425%);
+    }
+    85.8%{
+        transform: translateX(-71.425%);
+    }
+    95%{
+        transform: translateX(-85.7%); 
+    }
+    100%{
+        transform: translateX(-85.7%); 
+    }
+
+
+}
+.sliders img {
+    width: 100%;
+    height: 100%;
+  }
